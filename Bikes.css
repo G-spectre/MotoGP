@@ -1,0 +1,167 @@
+body {
+    background-image: url('https://wallpapercave.com/wp/wp9535153.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensures it covers the whole screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    height: 100vh; /* Ensures it fills the full viewport height */
+}
+
+/* Header Styling */
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #111;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+}
+
+/* Title Styling */
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.title:hover{
+    color: #e60000;
+    text-shadow: 0 7px 13px rgba(230, 0, 0, 0.5);;
+}
+
+/* Navbar Styling */
+.navBar {
+    display: flex;
+    gap: 30px;
+}
+
+.navBar a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+
+/* Active & Hover Effects */
+.navBar a:hover{
+    color: #fff;
+    background: #e60000;
+    box-shadow: 0 7px 13px rgba(230, 0, 0, 0.5);
+}
+
+/* Slider Container */
+.slider {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Slide Images */
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Navigation Arrows */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover, .next:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Fade Animation */
+.fade {
+    animation: fadeEffect 1.5s;
+}
+
+@keyframes fadeEffect {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+
+/* Footer Styling */
+.motogp-footer {
+    background: #111; /* Dark racing theme */
+    color: #fff; /* White text for contrast */
+    text-align: center;
+    padding: 30px 20px;
+    border-top: 5px solid #e60000; /* MotoGP Red */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Footer Title */
+.footer-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #e60000; /* Racing Red */
+}
+
+/* Social Media Icons */
+.social-links {
+    margin: 15px 0;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 1.5rem;
+    color: #bbb;
+    transition: color 0.3s ease-in-out, transform 0.3s;
+}
+
+.social-links a:hover {
+    color: #e60000; /* Highlight effect */
+    transform: scale(1.2);
+}
+
+/* Copyright Text */
+.copyright {
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 10px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .head {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .navBar {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .navBar a {
+        display: block;
+        padding: 10px;
+    }
+}
